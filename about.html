@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3.CSS and fonts -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="webstyle.css">
+  
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+    }
+
+    h1, h2 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .w3-bar, button {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .container {
+      padding: 50px 25px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      font-size: 18px;
+      line-height: 1.8;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0073e6;
+      margin-top: 40px;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ddd;
+      font-size: 16px;
+    }
+
+    .w3-red { background-color: #d32f2f !important; }
+    .highlight {
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-left: 6px solid #2196f3;
+    }
+
+    
+    .about-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1;
+      margin-right: 30px; /
+    }
+
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="website.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-white">About</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Services</a>
+    <a href="partners.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Partners</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+
+  
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+<header class="w3-container w3-red w3-center" style="padding:70px 16px">
+  <h1 class="w3-margin w3-xxlarge">About Us</h1>
+  <p class="w3-large">Learn more about who we are and what we do</p>
+</header>
+
+
+<div class="container">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>Who Are We</h2>
+      <p>We are a passionate group of individuals committed to guiding people through transformative journeys. Our mission is to help you overcome your inner barriers, redefine your mindset, and reach your highest potential.</p>
+
+      <h2>Our Vision</h2>
+      <p>We believe everyone has a unique path to walk and strengths to discover. This experience is not just a program; it's a call to adventure. From fear to courage, confusion to clarity, the process changes you.</p>
+
+      <h2>What We Do</h2>
+      <p>We provide you with a once-in-a-lifetime journey with real professionals who have taken the same journey in the past to guide you on your own path.</p>
+    </div>
+    <div class="about-image">
+      <img src="hseagnarcvkfz26va5v9.jpg" alt="Journey Image">
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1 class="w3-margin w3-xlarge">Quote of the day: "Live life to the fullest."</h1>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Your Company Name. All rights reserved.
+</footer>
+
+<script>
+  function toggleMenu() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") === -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>
